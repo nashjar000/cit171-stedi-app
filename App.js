@@ -6,6 +6,7 @@ import OnboardingScreen from './screens/OnboardingScreen';
 import Home from './screens/Home';
 import { NavigationContainer } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Title } from 'react-native-paper';
 
 
 
@@ -56,6 +57,9 @@ return(
   } else if(loggedInState==loggedInStates.NOT_LOGGED_IN){
     return (
       <View>
+        <Text>
+
+        </Text>
         <TextInput 
           value={phoneNumber}
           onChangeText={setPhoneNumber}
@@ -154,5 +158,9 @@ return(
        alignItems: "center",
        backgroundColor: "#DDDDDD",
        padding: 10
-     }    
+     },
+     title: {
+      textAlign: "center",
+      marginTop: 20,
+     }
  })
