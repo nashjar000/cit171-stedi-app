@@ -57,9 +57,7 @@ return(
   } else if(loggedInState==loggedInStates.NOT_LOGGED_IN){
     return (
       <View>
-        <Text>
-
-        </Text>
+        <Text style={styles.title}>Welcome back!</Text>
         <TextInput 
           value={phoneNumber}
           onChangeText={setPhoneNumber}
